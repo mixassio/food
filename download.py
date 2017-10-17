@@ -4,7 +4,7 @@ import sqlite3
 
 conn = sqlite3.connect('./food.db')
 c = conn.cursor()
-c.execute("DROP TABLE  foods_link")
+#c.execute("DROP TABLE  foods_link")
 c.execute("CREATE TABLE foods_link (page CHAR, link CHAR, title CHAR)")
 
 for page in range(1, 1000000):
