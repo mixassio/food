@@ -16,3 +16,4 @@ for page in range(1, 1000000):
     if page % 100 == 0:
         conn.commit()
         print(page)
+
